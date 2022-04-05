@@ -1,0 +1,33 @@
+{
+    "name": "danny50610/php-cid",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Danny50610\\Cid\\": "src"
+        }
+    },
+     "autoload-dev": {
+        "psr-4": {
+            "Danny50610\\Cid\\Tests\\": "tests"
+        }
+    },
+    "authors": [
+        {
+            "name": "Chan, Danny",
+            "email": "danny50610@yahoo.com.tw"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "tuupola/base58": "^2.1"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
