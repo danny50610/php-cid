@@ -21,7 +21,7 @@ class CID extends Multihash
         if ($this->version == 1) {
             return parent::__toString();
         } elseif ($this->version == 2) {
-            // TODO:
+            throw new \Exception('not implement');
         }
 
         throw new \Exception('unknown version');
