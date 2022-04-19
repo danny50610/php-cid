@@ -1,10 +1,7 @@
-# php-cid
+<?php
 
-[![Latest Stable Version](http://poser.pugx.org/danny50610/php-cid/v)](https://packagist.org/packages/danny50610/php-cid)
-[![Total Downloads](http://poser.pugx.org/danny50610/php-cid/downloads)](https://packagist.org/packages/danny50610/php-cid)
+require 'vendor/autoload.php';
 
-## Example
-```php
 use Danny50610\Cid\CID;
 use Danny50610\Cid\Codec;
 use Danny50610\Cid\Multihash;
@@ -24,4 +21,3 @@ print($cidv0 . PHP_EOL); // QmVPKnh2nScP7zfMWFEC6JAcruqxPncbMmAMa98AiMZCZQ
 // v1
 $cidv1 = new CID(1, Codec::get('DagProtobuf'), $type, $hash);
 print($cidv1 . PHP_EOL); // zdj7WcUaA86dv5yzhyHEzBoxg1BV83Q7L2jE5ZtEwWqXo86jL
-```

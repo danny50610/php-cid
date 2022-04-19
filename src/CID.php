@@ -16,6 +16,11 @@ class CID extends Multihash
         $this->codec = $codec;
     }
 
+    public static function makeV0(Multihash $multihash)
+    {
+        return new static(0, Codec::get('DagProtobuf'), $multihash->type, $multihash->binaryHash);
+    }
+
     public function __toString(): string
     {
         if ($this->version == 0) {
